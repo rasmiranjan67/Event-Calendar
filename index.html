@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calender | Rasmiranjan Mohanty</title>
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <link rel="stylesheet" href="calen.css">
+    <link href="https://fonts.googleapis.com/css2?
+family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="evo-calendar.royal-navy.min.css">
+</head>
+
+<body>
+    <div class="cal">
+        <div id="calendar"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <script src="evo-calendar.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#calendar').evoCalendar({
+
+                'theme': 'Royal Navy',
+
+
+
+                calendarEvents: [{
+                    id: 'event1',
+                    name: "New Year",
+                    date: "January/1/2022",
+                    description: "The heart touching greetings will make feel anyone very special.Wish your near and dear one with our special greetings.",
+                    type: "holiday",
+                    everyYear: true
+                },
+                {
+                    id: 'event2',
+                    name: "Woman's Day",
+                    date: "March/8/2022",
+                    description: "A Sucessfull Woman is one who can build a firm foundation with the bricks others have thrown at her",
+                    type: "holiday",
+                    everyYear: true
+                },
+                {
+                    id: 'event3',
+                    name: "Labour's Day",
+                    date: "September/5/2022",
+                    description: "The magic is not that we do the work but that we are happy doing it.",
+                    type: "holiday",
+                    everyYear: true
+                },
+                {
+                    id: 'event4',
+                    name: "Gandhi Jayanti",
+                    date: "Octomber/2/2022",
+                    description: "The greatness of humanity is not in being human ,but in the being is humane",
+                    type: "holiday",
+                    everyYear: true
+                },
+                {
+                    id: 'event5',
+                    name: "Christmas Day",
+                    date: "December/25/2022",
+                    description: "Christmas is built upon a beautiful and intentional paradox,that the birth of the homeless should be celebrated in every home",
+                    type: "holiday",
+                    everyYear: true
+                }]
+            })
+        })
+    </script>
+</body>
+
+</html>
